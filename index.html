@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Word</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Guess the Word</h1>
+        <p>(European Countries edition)</p>
+        <div id="word-display"></div>
+        <label for="guess-input">Enter a letter or the entire word:</label>
+        <input type="text" id="guess-input">
+        <button onclick="makeGuess()">Guess</button>
+        <p>Attempts left: <span id="attempts-count"></span></p>
+        <div id="result-popup">
+            <p id="result-message"></p>
+            <button id="new-game-button" onclick="startNewGame()">Start New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
